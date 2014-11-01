@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>8000erpolymertest</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="bower_components/platform/platform.js"></script>
+  <link rel="import" href="bower_components/google-map/google-map.html">
+  <link rel="import" href="bower_components/point-overlay/point-overlay.html">
+  <link rel="import" href="bower_components/core-icons/core-icons.html">
+  <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="bower_components/font-roboto/roboto.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="bower_components/paper-toast/paper-toast.html">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<template is="auto-binding">
+    <google-map map="{{map}}" latitude="27.8892" longitude="87.0886" zoom="11"></google-map>
+    <point-overlay map="{{map}}" data='[{"lat": 27.9881, "lng": 86.9253}]'></point-overlay>
+    <point-overlay map="{{map}}" data='[{"lat": 27.9617, "lng": 86.9333}]'></point-overlay>
+    <point-overlay map="{{map}}" data='[{"lat": 27.8892, "lng": 87.0886}]'></point-overlay>
+    <script src="main.js"></script>
+</template>
+ </body>
+</html>
